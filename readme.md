@@ -71,4 +71,4 @@ This project is open-source and available under the MIT License.
 ## Check Out the Android App
 
 You can also check out the BetterVTOP Android app here:
-[BetterVTOP Android]([https://github.com/sathwikv2005/BetterVTOP-VITAP/](https://github.com/sathwikv2005/BetterVTOP-VITAP/)
+[BetterVTOP Android](https://github.com/sathwikv2005/BetterVTOP-VITAP/releases)
