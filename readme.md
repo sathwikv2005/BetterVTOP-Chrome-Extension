@@ -42,7 +42,7 @@ export default {
 ```
 
 > You can use the open-source API provided:
-> [BetterVTOP API](https://github.com/sathwikv2005/BetterVTOP-VITAP)
+> [BetterVTOP API](https://github.com/sathwikv2005/VTOP-VITAP-api)
 
 ---
 
