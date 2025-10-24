@@ -1,0 +1,41 @@
+{
+	"manifest_version": 3,
+	"name": "Better VTOP",
+	"description": "Make VTOP better",
+	"version": "1.0",
+
+	"action": {
+		"default_title": "BetterVTOP",
+		"default_icon": {
+			"16": "/assets/icon_t.png",
+			"32": "/assets/icon_t.png",
+			"48": "/assets/icon_t.png",
+			"128": "/assets/icon_t.png"
+		},
+		"default_popup": "/html/popup.html"
+	},
+	"icons": {
+		"16": "/assets/icon_t.png",
+		"32": "/assets/icon_t.png",
+		"48": "/assets/icon_t.png",
+		"128": "/assets/icon_t.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["js/captcha/captchaSolver.js", "js/captcha/weights.json"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": ["tabs", "storage", "scripting", "nativeMessaging", "cookies"],
+	"host_permissions": ["https://*/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://*.vitap.ac.in/vtop/login", "https://*.vitap.ac.in/vtop/open/page"],
+			"js": ["./login.js"],
+			"type": "module"
+		}
+	]
+}
