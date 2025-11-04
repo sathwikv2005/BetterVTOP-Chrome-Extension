@@ -29,7 +29,24 @@
 			"matches": ["<all_urls>"]
 		}
 	],
-	"permissions": ["tabs", "storage", "scripting", "nativeMessaging", "cookies"],
+
+	"permissions": [
+		"tabs",
+		"storage",
+		"scripting",
+		"nativeMessaging",
+		"cookies",
+		"declarativeNetRequest"
+	],
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "ruleset_1",
+				"enabled": true,
+				"path": "rules.json"
+			}
+		]
+	},
 	"host_permissions": ["https://*/*"],
 	"content_scripts": [
 		{

@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": { "url": "https://vtop.vitap.ac.in/vtop/vtop/mandatory/data/off" }
+		},
+		"condition": {
+			"regexFilter": "^https://([^.]+\\.)?vitap\\.ac\\.in/vtop/feedback/feedbackform(?:$|\\?)",
+			"resourceTypes": ["xmlhttprequest"]
+		}
+	},
+	{
+		"id": 2,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": { "url": "https://vtop.vitap.ac.in/vtop/vtop/mandatory/data/off" }
+		},
+		"condition": {
+			"regexFilter": "^https://([^.]+\\.)?vitap\\.ac\\.in/vtop/feedback/mentorform(?:$|\\?)",
+			"resourceTypes": ["xmlhttprequest"]
+		}
+	}
+]
