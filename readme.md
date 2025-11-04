@@ -6,9 +6,11 @@ Better VTOP is a Chrome extension designed to enhance the VTOP experience for VI
 
 ## Features
 
-- Auto-fill VTOP credentials
-- Automatic captcha solving
-- Stylish, modern UI for login
+- 🔐 Auto-fill VTOP credentials
+- 🤖 Automatic captcha solving
+- 🧠 **Feedback Form Bypass** — instantly skips the long feedback form, so you can access VTOP without interruptions
+- 🎨 Stylish, modern UI for login
+- ⚡ Works seamlessly even without the API (except popup login)
 
 ---
 
@@ -28,9 +30,10 @@ Better VTOP is a Chrome extension designed to enhance the VTOP experience for VI
 
 ---
 
-## Configuration
+## 🔧 Configuration
 
-The extension requires an API endpoint for handling login and captcha.
+> Note: The API and config.js are only required for logging into VTOP through the extension popup.
+> All other features — including the feedback form bypass — work without the API.
 
 1. Create a `config.js` file in the project root.
 2. Add your API endpoint as follows:
