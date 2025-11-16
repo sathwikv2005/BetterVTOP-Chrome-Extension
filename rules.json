@@ -22,5 +22,17 @@
 			"regexFilter": "^https://([^.]+\\.)?vitap\\.ac\\.in/vtop/feedback/mentorform(?:$|\\?)",
 			"resourceTypes": ["xmlhttprequest"]
 		}
+	},
+	{
+		"id": 3,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": { "url": "https://vtop.vitap.ac.in/vtop/vtop/mandatory/data/off" }
+		},
+		"condition": {
+			"regexFilter": "^https://([^.]+\\.)?vitap\\.ac\\.in/vtop/check/expired/password(?:$|\\?)",
+			"resourceTypes": ["xmlhttprequest"]
+		}
 	}
 ]

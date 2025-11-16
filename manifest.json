@@ -53,6 +53,14 @@
 			"matches": ["https://*.vitap.ac.in/vtop/login", "https://*.vitap.ac.in/vtop/open/page"],
 			"js": ["./login.js"],
 			"type": "module"
+		},
+		{
+			"matches": [
+				"https://registration.vitap.ac.in/*",
+				"https://registration.vitap.ac.in/*/checkRegistration"
+			],
+			"js": ["./registration.js"],
+			"type": "module"
 		}
 	]
 }
